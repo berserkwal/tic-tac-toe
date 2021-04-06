@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tic Tac Toe</title>
+	<script src="https://kit.fontawesome.com/3a1e4c9014.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+		<h1>Tic Tac Toe</h1>
+	</header>
+	<div class="score">
+		<h2 class="score-text">
+			<span class="p1">0</span>
+			:
+			<span class="p2">0</span>
+		</h2>
+	</div>
+	<div class="game-container">
+		<button class="boxes box-1"></button>
+		<button class="boxes box-2"></button>
+		<button class="boxes box-3"></button>
+		<button class="boxes box-4"></button>
+		<button class="boxes box-5"></button>
+		<button class="boxes box-6"></button>
+		<button class="boxes box-7"></button>
+		<button class="boxes box-8"></button>
+		<button class="boxes box-9"></button>
+		<div class="l-r hidden"></div>
+		<div class="t-b hidden"></div>
+		<div class="diag hidden"></div>
+	</div>
+	<div class="turn-status">
+		<h2>Turn: Player 1</h2>
+		<span>Player 1 is <i class="fas fa-times"></i>, Player 2 is <i class="far fa-circle"></i></span>
+	</div>
+	<button class="reset-button">Reset</button>
+
+	<script src="app.js"></script>
+</body>
+
+</html>
