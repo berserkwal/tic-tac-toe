@@ -175,17 +175,9 @@ header {
 
 @media screen and (max-width: 768px) {
 	body {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 	header {
 		padding-block: 0;
-	}
-	.game-container {
-		width: 240px;
-		height: 240px;
-	}
-	.boxes {
-		height: 80px;
-		width: 80px;
 	}
 }
