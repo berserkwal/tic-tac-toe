@@ -50,12 +50,12 @@ header {
 .score::before {
 	top: 50%;
 	right: 100%;
-	content: "Player 1";
+	content: attr(data-one);
 }
 .score::after {
 	top: 50%;
 	left: 100%;
-	content: "Player 2";
+	content: attr(data-two);
 }
 
 .game-container {
