@@ -387,5 +387,3 @@ function victory(keyword, playerCode) {
 		}
 	}
 }
-
-console.log(gameArray);
