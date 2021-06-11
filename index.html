@@ -5,10 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tic Tac Toe</title>
-		<script
-			src="https://kit.fontawesome.com/3a1e4c9014.js"
-			crossorigin="anonymous"
-		></script>
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap"
@@ -22,37 +18,33 @@
 			<h1>Tic Tac Toe</h1>
 		</header>
 		<div class="main">
-			<div class="score" data-one="Player 1" data-two="Player 2">
-				<h2 class="score-text">
-					<span class="p1">0</span>
-					:
-					<span class="p2">0</span>
-				</h2>
-			</div>
+			<h2 class="score" data-one="Player 1" data-two="Player 2">
+				<!-- <h2 class="score-text"> -->
+				<span class="p1">0</span>
+				:
+				<span class="p2">0</span>
+				<!-- </h2> -->
+			</h2>
 			<div class="game-container">
-				<div class="boxes box-2" data-index="0"></div>
-				<div class="boxes box-2" data-index="1"></div>
-				<div class="boxes box-2" data-index="2"></div>
-				<div class="boxes box-2" data-index="3"></div>
-				<div class="boxes box-2" data-index="4"></div>
-				<div class="boxes box-2" data-index="5"></div>
-				<div class="boxes box-2" data-index="6"></div>
-				<div class="boxes box-2" data-index="7"></div>
-				<div class="boxes box-2" data-index="8"></div>
-				<div class="l-r"></div>
-				<div class="t-b"></div>
-				<div class="diag"></div>
+				<button class="boxes" data-index="0"></button>
+				<button class="boxes" data-index="1"></button>
+				<button class="boxes" data-index="2"></button>
+				<button class="boxes" data-index="3"></button>
+				<button class="boxes" data-index="4"></button>
+				<button class="boxes" data-index="5"></button>
+				<button class="boxes" data-index="6"></button>
+				<button class="boxes" data-index="7"></button>
+				<button class="boxes" data-index="8"></button>
+
+				<div class="lines l-r invisible"></div>
+				<div class="lines t-b invisible"></div>
+				<div class="lines diag invisible"></div>
 			</div>
-			<div class="turn-status">
-				<h2>Player 1's turn.</h2>
-				<span
-					><b class="p1-info">Player 1</b> is &nbsp;<i class="fas fa-times"></i>
-					&nbsp;&nbsp;|&nbsp;&nbsp; <b class="p2-info">Player 2</b> is &nbsp;<i
-						class="far fa-circle"
-					></i
-				></span>
+			<h2 class="turn-status">Player 1's turn.</h2>
+			<div class="game-reset-buttons">
+				<button class="reset-button">Reset Board</button>
+				<button class="reset-button">Reset Game</button>
 			</div>
-			<button class="reset-button">Reset</button>
 		</div>
 		<footer>
 			Designed and developed by
@@ -60,9 +52,34 @@
 				>berserkwal</a
 			>
 		</footer>
-		<section class="modal-backdrop">
-			<form></form>
+		<section class="modal hidden">
+			<div class="modal-overlay"></div>
+			<form>
+				<h2>Enter player names</h2>
+				<div class="close-button">X</div>
+				<label class="input-label p1">
+					<input
+						type="text"
+						name="p1Name"
+						id="playerOneName"
+						required
+						placeholder="Enter first player's name"
+						autocomplete="off"
+					/>
+				</label>
+				<label class="input-label p2">
+					<input
+						type="text"
+						name="p2Name"
+						id="playerTwoName"
+						required
+						placeholder="Enter second player's name"
+						autocomplete="off"
+					/>
+				</label>
+				<button>Submit</button>
+			</form>
 		</section>
-		<script src="backupLogic.js"></script>
+		<script src="app.js"></script>
 	</body>
 </html>
