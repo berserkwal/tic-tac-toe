@@ -6,7 +6,7 @@
 }
 
 :root {
-	--clr-bg: rgb(19, 13, 13);
+	--clr-bg: rgb(20, 22, 41);
 	--clr-txt: rgb(245, 245, 245);
 }
 
@@ -95,12 +95,12 @@ header {
 	text-align: center;
 }
 
-.boxes:disabled.xed {
+.boxes.X {
 	background-image: url(X.png);
 	background-color: rgb(192, 255, 190);
 	background-size: contain;
 }
-.boxes:disabled.ohd {
+.boxes.O {
 	background-image: url(O.png);
 	background-color: rgb(255, 190, 190);
 	background-size: contain;
